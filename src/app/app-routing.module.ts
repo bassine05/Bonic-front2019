@@ -34,10 +34,12 @@ import { ListertagsComponent } from './home/termes-reserves/listertags/listertag
 import { GestionAutorisationComponent } from './home/termes-reserves/gestion-autorisation/gestion-autorisation.component';
 import { GenerateCodeComponent } from './home/termes-reserves/gestion-autorisation/generate-code/generate-code.component';
 import { ListerdemandesComponent } from './home/termes-reserves/gestion-autorisation/listerdemandes/listerdemandes.component';
+import { DocumentationComponent } from './home/documentation/documentation.component';
 const routes: Routes = [
   {path:'accueil',component: HomeComponent,
   children:[
     {path: 'dashboard',component: DashboardComponent},
+    {path: 'documentation',component: DocumentationComponent},
     {path: 'users',component: GestionUsersComponent,
       children:[
         {path: 'user',component: UserComponent},

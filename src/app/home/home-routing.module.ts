@@ -33,11 +33,13 @@ import { ListertagsComponent } from './termes-reserves/listertags/listertags.com
 import { GestionAutorisationComponent } from './termes-reserves/gestion-autorisation/gestion-autorisation.component';
 import { GenerateCodeComponent } from './termes-reserves/gestion-autorisation/generate-code/generate-code.component';
 import { ListerdemandesComponent } from './termes-reserves/gestion-autorisation/listerdemandes/listerdemandes.component';
+import { DocumentationComponent } from './documentation/documentation.component';
 
 const routes: Routes = [
   {path:'accueil',component: HomeComponent,
   children:[
     {path: 'dashboard',component: DashboardComponent},
+    {path: 'documentation',component: DocumentationComponent},
     {path: 'users',component: GestionUsersComponent,
       children:[
         {path: 'user',component: UserComponent},
