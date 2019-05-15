@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AuthComponent } from './auth/auth.component';
 import { HomeModule } from './home/home.module';
-import { RegistrarComponent } from './home/registrar/registrar.component';
-import { DomainComponent } from './home/domain/domain.component';
+
 import { DocumentationComponent } from './home/documentation/documentation.component';
 
 
@@ -17,9 +16,7 @@ import { DocumentationComponent } from './home/documentation/documentation.compo
     AppComponent,
     HomeComponent,
     AuthComponent,
-    RegistrarComponent,
-    DomainComponent,
-    DocumentationComponent,
+    DocumentationComponent
 
   ],
   imports: [

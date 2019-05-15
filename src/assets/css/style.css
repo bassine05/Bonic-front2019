@@ -3255,7 +3255,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .user-bg .overlay-box {
-    background: #4a23ad;
+    background: #f6f6fa;
     opacity: .9;
     position: absolute;
     top: 0;
@@ -5652,7 +5652,7 @@ ul.list-icons li i {
 .top-left-part {
     width: 265px;
     float: left;
-    background: rgba(0, 0, 0, .1)
+    background: rgba(0, 0, 0, 0.1)
 }
 
 .top-left-part a {
@@ -5840,13 +5840,15 @@ ul.list-icons li i {
 }
 
 .page-wrapper {
-    background: #f4f8f9;
+    background: #ffffff;
     padding-bottom: 60px
 }
+
 
 .container-fluid {
     padding: 30px;
     padding-bottom: 0
+
 }
 
 .white-box {

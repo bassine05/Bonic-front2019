@@ -191,7 +191,7 @@
                               </span>
                           </a>
                           <ul class="dropdown-menu animated flipInY">
-                              <li><a href="javascript:void(0);"><i class="fa fa-user"></i> Profile</a></li>
+                              <li><a routerLink="/accueil/users/user"><i class="fa fa-user"></i> Profile</a></li>
                               <li><a href="javascript:void(0);"><i class="fa fa-inbox"></i> Inbox</a></li>
                               <li role="separator" class="divider"></li>
                               <li><a href="javascript:void(0);"><i class="fa fa-cog"></i> Account Settings</a></li>
@@ -212,20 +212,17 @@
                           <ul aria-expanded="false" class="collapse">
                               <li> <a> Gérer registrar </a> 
                                 <ul aria-expanded="false" class="collapse"> 
-                                    <li> <a>Créer Accréditation registrar</a> </li>
-                                    <li> <a>Supprimer registrar</a> </li> 
-                                    <li> <a>Editer registrar</a> </li>
-                                    <li> <a>Lister registrars</a> </li> 
-                                    <li> <a>Lister domaines d'un registrar</a> </li>
-                                    <li> <a>Gérer facturation registrars </a> </li> 
-                                    <li> <a>Recherche un registrar </a> </li> 
+                                    <li routerLink="/accueil/registrars/addregistrar"> <a>Créer Accréditation</a> </li>
+                                    <li routerLink="/accueil/registrars/listeregistrars" > <a>Lister registrars</a> </li> 
+                                    <li routerLink="/accueil/registrars/factureregistrar"> <a>Gérer facturation registrars </a> </li> 
+                                    <li routerLink="/accueil/registrars/searchregistrar"> <a>Recherche un registrar </a> </li> 
                                 </ul>
                                 </li>
                               <li> <a> Gérer Comptes </a> 
                                 <ul aria-expanded="false" class="collapse">
-                                    <li routerLink="/accueil/users/user"> <a> Créer compte registrar </a> </li>
-                                    <li routerLink="/accueil/users/listeusers"> <a> Lister comptes registrars</a> </li>
-                                    <li routerLink="/accueil/users/adduser"> <a>Rechercher un compte</a> </li>
+                                    <li routerLink ="/accueil/comptes/addcomptes"> <a> Créer compte registrar </a> </li>
+                                    <li routerLink ="/accueil/comptes/listcomptes"> <a> Lister comptes registrars</a> </li>
+                                    <li routerLink ="/accueil/comptes/searchcomptes"> <a>Rechercher un compte</a> </li>
                                   </ul>
                             </li>
                           </ul>
@@ -235,33 +232,30 @@
                           <ul aria-expanded="false" class="collapse">  
                             <li> <a > Gérer domaines </a> 
                               <ul aria-expanded="false" class="collapse"> 
-                                  <li> <a>Lister domaines</a> </li>
-                                  <li> <a>Consulter extensions</a> </li> 
-                                  <li> <a>Créer extension</a> </li> 
+                                  <li routerLink="/accueil/domaines/listerdomaines"> <a>Lister domaines</a> </li>
+                                  <li routerLink="/accueil/domaines/consulterextensions"> <a>Consulter extensions</a> </li> 
+                                  <li routerLink="/accueil/domaines/addextension"> <a>Créer extension</a> </li> 
                               </ul>
                             </li>
                               <li> <a>Gérer termes premiums</a> 
                                 <ul aria-expanded="false" class="collapse"> 
-                                    <li> <a>Ajouter une catégorie</a> </li>
-                                    <li> <a>Supprimer une catégorie</a> </li> 
-                                    <li> <a>Ajouter terme premium</a> </li>
-                                    <li> <a>Supprimer terme premium</a> </li> 
-                                    <li> <a>Lister termes premiums</a> </li> 
-                                    <li> <a>Gérer tarification </a> </li> 
+                                    <li routerLink="/accueil/premium/addcategorie"> <a>Ajouter une catégorie</a> </li>
+                                    <li routerLink="/accueil/premium/listercategories"> <a>Lister les catégories</a> </li> 
+                                    <li routerLink="/accueil/premium/addpremium"> <a>Ajouter terme premium</a> </li>
+                                    <li routerLink="/accueil/premium/listerpremiums"> <a>Lister termes premiums</a> </li> 
+                                    <li routerLink="/accueil/premium/tarification"> <a>Gérer tarification </a> </li> 
                                 </ul>
                             </li>
                               <li> <a>Gérer termes réservés</a> 
                                 <ul aria-expanded="false" class="collapse"> 
-                                    <li> <a>Ajouter une catégorie</a> </li>
-                                    <li> <a>Supprimer une catégorie</a> </li> 
-                                    <li> <a>Ajouter terme réservé</a> </li>
-                                    <li> <a>Supprimer terme réservé</a> </li> 
-                                    <li> <a>Lister termes réservés</a> </li> 
+                                    <li routerLink="/accueil/reserver/addtag"> <a>Ajouter une catégorie</a> </li>
+                                    <li routerLink="/accueil/reserver/listertags"> <a>Lister les catégories</a> </li> 
+                                    <li routerLink="/accueil/reserver/addreserver"> <a>Ajouter terme réservé</a> </li> 
+                                    <li routerLink="/accueil/reserver/listerreservers"> <a>Lister termes réservés</a> </li> 
                                     <li> <a class="active waves-effect">Gérer code d'autorisation </a>
                                         <ul aria-expanded="false" class="collapse"> 
-                                            <li> <a>Générer code</a> </li>
-                                            <li> <a>Rejeter demande</a> </li> 
-                                            <li> <a>Supprimer demande</a> </li> 
+                                            <li routerLink="/accueil/reserver/autorisation/code"> <a>Générer code</a> </li>
+                                            <li routerLink="/accueil/reserver/autorisation/listerdemande"> <a>Lister demandes</a> </li> 
                                         </ul>
                                      </li> 
                                 </ul>
