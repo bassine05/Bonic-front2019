@@ -1584,7 +1584,7 @@ hr {
 
 .custom-select {
     padding: 9px 45px 9px 20px;
-    background: url(../../plugins/images/arrow-down.png) right 16px center no-repeat #f4f8f9;
+    background: url(/Users/mac/Desktop/PROJETS/front-Bonic/src/assets/plugins/images/arrow-down.png) right 16px center no-repeat #f4f8f9;
     border: none;
     margin-left: 8px;
     font-size: 15px;
@@ -5664,10 +5664,10 @@ ul.list-icons li i {
 
 .navbar-header {
     width: 100%;
-    background: #bc0000;
-    background: -moz-linear-gradient(left, #bc0000 1%, #bc0000 100%);
-    background: -webkit-linear-gradient(left, #bc0000 1%, #bc0000 100%);
-    background: linear-gradient(to right, #bc0000 1%, #bc0000 100%);
+    background: #287ee0;
+    background: -moz-linear-gradient(left, #287ee0 1%, #287ee0 100%);
+    background: -webkit-linear-gradient(left, #287ee0 1%, #287ee0 100%);
+    background: linear-gradient(to right, #287ee0 1%, #287ee0 100%);
     border: 0
 }
 
@@ -6888,7 +6888,7 @@ ul.list-icons li i {
 }
 
 .carousel-widget {
-    background: url(../../plugins/images/flowers.jpg) -140px;
+    background: url(/Users/mac/Desktop/PROJETS/front-Bonic/src/assets/plugins/images/flowers.jpg) -140px;
     background-size: cover;
     position: relative;
     text-align: center;
@@ -13521,13 +13521,13 @@ a.mytooltip {
     margin: -7px 0 0 -15px;
     width: 30px;
     height: 20px;
-    background: url(../../plugins/images/tooltip/tooltip1.svg) center center no-repeat;
+    background: url(/Users/mac/Desktop/PROJETS/front-Bonic/src/assets/plugins/images/tooltip/tooltip1.svg) center center no-repeat;
     background-size: 100%
 }
 
 .tooltip-content3 {
     position: absolute;
-    background: url(../../plugins/images/tooltip/shape1.svg) center bottom no-repeat;
+    background: url(/Users/mac/Desktop/PROJETS/front-Bonic/src/assets/plugins/images/tooltip/shape1.svg) center bottom no-repeat;
     background-size: 100% 100%;
     z-index: 9999;
     width: 200px;

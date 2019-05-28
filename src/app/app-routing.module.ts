@@ -32,7 +32,6 @@ import { AddtagComponent } from './home/termes-reserves/addtag/addtag.component'
 import { ListerReservesComponent } from './home/termes-reserves/lister-reserves/lister-reserves.component';
 import { ListertagsComponent } from './home/termes-reserves/listertags/listertags.component';
 import { GestionAutorisationComponent } from './home/termes-reserves/gestion-autorisation/gestion-autorisation.component';
-import { GenerateCodeComponent } from './home/termes-reserves/gestion-autorisation/generate-code/generate-code.component';
 import { ListerdemandesComponent } from './home/termes-reserves/gestion-autorisation/listerdemandes/listerdemandes.component';
 import { DocumentationComponent } from './home/documentation/documentation.component';
 const routes: Routes = [
@@ -87,7 +86,6 @@ const routes: Routes = [
     {path: 'listertags',component: ListertagsComponent},
     {path: 'autorisation',component: GestionAutorisationComponent,
     children:[
-      {path: 'code',component: GenerateCodeComponent},
       {path: 'listerdemande',component: ListerdemandesComponent}
     ],
   }

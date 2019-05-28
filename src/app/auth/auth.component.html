@@ -4,16 +4,16 @@
   <section id="wrapper" class="login-register">
       <div class="login-box">
           <div class="white-box">
-              <form class="form-horizontal form-material" id="loginform" action="index.html">
+              <form class="form-horizontal form-material" id="loginform">
                   <h3 class="box-title m-b-20">Sign In</h3>
                   <div class="form-group ">
                       <div class="col-xs-12">
-                          <input class="form-control" type="text" required="" placeholder="Username">
+                          <input class="form-control" type="text" style="font-size: 14px" required="" placeholder="Username" >
                       </div>
                   </div>
                   <div class="form-group">
                       <div class="col-xs-12">
-                          <input class="form-control" type="password" required="" placeholder="Password">
+                          <input class="form-control" type="password" style="font-size: 14px" required="" placeholder="Password">
                       </div>
                   </div>
                   <div class="form-group">
@@ -26,20 +26,19 @@
                   </div>
                   <div class="form-group text-center m-t-20">
                       <div class="col-xs-12">
-                          <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit" routerLink = "/accueil/dashboard">Log In</button>
+                          <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="button" (click)="goDashboard();">Log In</button>
                       </div>
                   </div>
                   <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
                           <div class="social">
-                              <a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip" title="Login with Facebook"> <i aria-hidden="true" class="fa fa-facebook"></i> </a>
                               <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip" title="Login with Google"> <i aria-hidden="true" class="fa fa-google-plus"></i> </a>
                           </div>
                       </div>
                   </div>
                   <div class="form-group m-b-0">
                       <div class="col-sm-12 text-center">
-                          <p>Don't have an account? <a href="register.html" class="text-primary m-l-5"><b>Sign Up</b></a></p>
+                          <p style="font-size: 12px">Don't have an account? <a class="text-primary m-l-5"><b>Sign Up</b></a></p>
                       </div>
                   </div>
               </form>
@@ -64,3 +63,4 @@
           </div>
       </div>
   </section>
+<a href="/accueil/dashboard" id="go"></a>

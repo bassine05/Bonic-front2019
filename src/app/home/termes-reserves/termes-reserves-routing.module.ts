@@ -6,7 +6,6 @@ import { AddtagComponent } from './addtag/addtag.component';
 import { ListerReservesComponent } from './lister-reserves/lister-reserves.component';
 import { ListertagsComponent } from './listertags/listertags.component';
 import { GestionAutorisationComponent } from './gestion-autorisation/gestion-autorisation.component';
-import { GenerateCodeComponent } from './gestion-autorisation/generate-code/generate-code.component';
 import { ListerdemandesComponent } from './gestion-autorisation/listerdemandes/listerdemandes.component';
 
 const routes: Routes = [
@@ -18,7 +17,6 @@ const routes: Routes = [
     {path: 'listertags',component: ListertagsComponent},
     {path: 'autorisation',component: GestionAutorisationComponent,
     children:[
-      {path: 'code',component: GenerateCodeComponent},
       {path: 'listerdemande',component: ListerdemandesComponent}
     ],
   }
