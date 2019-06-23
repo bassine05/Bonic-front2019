@@ -6,8 +6,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AuthComponent } from './auth/auth.component';
 import { HomeModule } from './home/home.module';
+import { FormsModule } from '@angular/forms';
 
 import { DocumentationComponent } from './home/documentation/documentation.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './data.service';
+import { AuthService } from './auth.service';
 
 
 
@@ -22,9 +26,14 @@ import { DocumentationComponent } from './home/documentation/documentation.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
     HomeModule
   ],
-  providers: [],
+  providers: [
+    DataService,
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

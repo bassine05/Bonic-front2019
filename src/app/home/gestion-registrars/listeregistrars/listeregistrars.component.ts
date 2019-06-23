@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-listeregistrars',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListeregistrarsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService : DataService) { }
 
   ngOnInit() {
+    this.getRegistrars();
+  }
+
+  getRegistrars(){
+    this.dataService.get('registrars.json')
+      .then(
+        (data:any) => {
+          console.log(data);
+        },
+        err => {
+          console.log(err)
+        }
+      )
   }
 
 }

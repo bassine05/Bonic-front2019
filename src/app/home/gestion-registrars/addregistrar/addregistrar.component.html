@@ -7,7 +7,7 @@
                     <div class="panel-heading" style="font-size: 16px" > INFORMATIONS REGISTRAR</div>
                     <div class="panel-wrapper collapse in" aria-expanded="true">
                         <div class="panel-body">
-                            <form action="#" class="form-horizontal">
+                            <div>
                                 <div class="form-body">
                                     <h4 class="box-title"> IDENTITE REGISTRAR</h4>
                                     <hr class="m-t-0 m-b-40">
@@ -16,7 +16,10 @@
                                             <div class="form-group">
                                                 <label class="control-label col-md-3"> <h6>Nom</h6></label>
                                                 <div class="col-md-9">
-                                                    <input type="text" class="form-control" style="font-size: 14px" >  </div>
+                                                    <input name="name" type="text" class="form-control" style="font-size: 14px" [(ngModel)]="name" ngModel required > 
+                                                    <span *ngIf="name==''" style="color:red">Entrer le nom</span>
+                                                 </div>
+                                                    
                                             </div>
                                         </div>
                                         <!--/span-->
@@ -24,14 +27,16 @@
                                             <div class="form-group">
                                                 <label class="control-label col-md-3" style="font-size: 13px"><h6>Email</h6></label>
                                                 <div class="col-md-9">
-                                                    <input type="text" class="form-control" style="font-size: 14px" >  </div>
+                                                    <input name="mail"  type="text" class="form-control" style="font-size: 14px" [(ngModel)]="mail" ngModel required> 
+                                                    <span *ngIf="pasBon" style="color:red">Entrer l'email</span>
+                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="control-label col-md-3"><h6>URL</h6></label>
                                                 <div class="col-md-9">
-                                                    <input type="text" class="form-control" style="font-size: 14px" >   </div>
+                                                    <input name="url"  class="form-control" style="font-size: 14px" [(ngModel)]="url" ngModel required type="text">   </div>
                                             </div>
                                         </div>
                                         <!--/span-->
@@ -44,14 +49,14 @@
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3"><h6>Fax</h6></label>
                                                         <div class="col-md-9">
-                                                            <input type="text" class="form-control" style="font-size: 14px" >  </div>
+                                                            <input ngtype="text" class="form-control" style="font-size: 14px" name="fax" [(ngModel)]="fax"  ngModel >  </div>
                                                     </div>
                                                 </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="control-label col-md-3"><h6>NINEA</h6></label>
                                                 <div class="col-md-9">
-                                                    <input type="text" class="form-control" style="font-size: 14px" >  </div>
+                                                    <input type="text" class="form-control" style="font-size: 14px" name="NINEA" [(ngModel)]="NINEA" ngModel required>  </div>
                                             </div>
                                         </div>
                                         <!--/span-->
@@ -59,7 +64,7 @@
                                             <div class="form-group">
                                                 <label class="control-label col-md-3"><h6>Gurid du client</h6> </label>
                                                 <div class="col-md-9">
-                                                    <input type="text" class="form-control" style="font-size: 14px" > </div>
+                                                    <input type="text" class="form-control" style="font-size: 14px" name="GURID" [(ngModel)]="GURID" ngModel required> </div>
                                             </div>
                                         </div>
                                         
@@ -97,7 +102,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label col-md-3"><h6>IDExterne</h6></label>
                                                     <div class="col-md-9">
-                                                        <input type="text" class="form-control" style="font-size: 14px" >  </div>
+                                                        <input type="text" class="form-control" style="font-size: 14px" name="IDEXTERNE" [(ngModel)]="IDEXTERNE" ngModel>  </div>
                                                 </div>
                                             </div>
                                         <!--/span-->
@@ -106,66 +111,58 @@
                                     <hr class="m-t-0 m-b-20">
                                     <!--/row-->
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="control-label col-md-3"><h6>Adresse1</h6></label>
+                                                <label class="control-label col-md-3"><h6>Adresse</h6></label>
                                                 <div class="col-md-9">
-                                                    <input type="text" class="form-control" style="font-size: 14px"> </div>
+                                                    <input  type="text" class="form-control" style="font-size: 14px" name="adresse" [(ngModel)]="adresse" ngModel required> </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="control-label col-md-3"><h6>Adresse2</h6></label>
+                                                <label class="control-label col-md-3"><h6>Telephone</h6></label>
                                                 <div class="col-md-9">
-                                                    <input type="text" class="form-control" style="font-size: 14px"> </div>
+                                                    <input type="text" class="form-control" style="font-size: 14px" name="phone" [(ngModel)]="phone" ngModel> </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-3"><h6>Ville</h6></label>
-                                                    <div class="col-md-9">
-                                                        <select class="form-control" style="font-size: 12px">
-                                                            <option>Dakar</option>
-                                                            <option>Paris</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                       
                                     </div>
                                     <div class="row">
                                         <!--/span-->
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="control-label col-md-3"> <h6>Province</h6></label>
-                                                <div class="col-md-9">
-                                                    <input type="text" class="form-control" style="font-size: 14px"> </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-3"><h6>Code Postal</h6></label>
-                                                    <div class="col-md-9">
-                                                        <input type="text" class="form-control" style="font-size: 14px"> </div>
-                                                </div>
-                                            </div>
                                             <!--/span-->
-                                            <div class="col-md-4">
+                                            
+                                            <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label col-md-3"><h6>Pays</h6></label>
                                                     <div class="col-md-9">
-                                                        <select class="form-control" style="font-size: 12px">
-                                                            <option>Sénégal</option>
-                                                            <option>France</option>
+                                                        <select class="form-control" style="font-size: 12px" name="country" [(ngModel)]="country" ngModel >
+                                                            <ng-container *ngFor="let country of countries">     
+                                                                <option [ngValue]="country.id">{{country.name}}
+                                                                </option>
+                                                            </ng-container>                                
                                                         </select>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3"><h6>Ville</h6></label>
+                                                        <div class="col-md-9">
+                                                            <select class="form-control" style="font-size: 12px" name="city_id" [(ngModel)]="city_id" ngModel >
+                                                                <ng-container *ngFor="let city of cities">                   
+                                                                    <option [ngValue]="city.id">{{city.name}}
+                                                                        </option>
+                                                                </ng-container>                                
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         <!--/span-->
                                     </div>
                                     <!--/row-->
                                     <!--/row-->
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -483,7 +480,8 @@
             <div class="col-md-12">
                 <div class="form-group text-center m-t-20">
                     <div class="col-xs-12">
-                        <button class="btn btn-info btn-lg btn-block waves-effect waves-light" type="submit" style="font-size: 16px"> Créer accréditation</button>
+                        <button (click)="createRegistrar()" class="btn btn-info btn-lg btn-block waves-effect waves-light" type="submit" style="font-size: 16px"> Créer accréditation</button>
+                        <p>{{name?.value}}</p>
                     </div>
                 </div>
             </div>
